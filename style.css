@@ -1,0 +1,32 @@
+#button #btn_icon2, #button #btn_icon1 {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 1px solid black;
+  content: "";
+  display: inline-block;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#button {
+  padding-top: 50px;
+  padding-left: 100px;
+}
+#button #btn_icon1 {
+  padding-right: 110px;
+  width: 90px;
+  height: 50px;
+  right: 20px;
+  background-image: url("/simple/foto/icon.jpg");
+  text-align: right;
+  text-indent: 80%;
+}
+#button #btn_icon2 {
+  padding-left: 115px;
+  width: 95px;
+  height: 40px;
+  left: 20px;
+  background-image: url("/simple/foto/icon1.jpg");
+  text-align: left;
+}/*# sourceMappingURL=style.css.map */

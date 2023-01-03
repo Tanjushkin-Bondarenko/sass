@@ -1,0 +1,33 @@
+
+%btn_icon{
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 1px solid black;
+    content: ""; 
+    display: inline-block;
+    
+    top: 50%;
+    transform: translateY(-50%);
+}
+@mixin btn_icon($name, $icon_width, $icon-height, $horizontal-position){
+@extend %btn_icon;
+
+padding-#{$horizontal-position}:$icon_width +20px;
+    width: $icon_width;
+    height: $icon-height;
+#{$horizontal-position}: 20px;
+background-image: url('/simple/foto/#{$name}.jpg');
+text-align: #{$horizontal-position};
+}
+#button {
+    padding-top: 50px;
+    padding-left: 100px;  
+#btn_icon1{
+    @include btn_icon('icon', 90px, 50px, 'right');
+    text-indent: 80%;
+}
+#btn_icon2{
+    @include btn_icon('icon1', 95px, 40px, 'left')
+}
+}
